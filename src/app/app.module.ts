@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PortadaComponent } from './portada/portada.component';
-import { NosotrosComponent } from './nosotros/nosotros.component'; 
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { PostComponent } from './post/post.component'; 
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     NavbarComponent,
     PortadaComponent,
     NosotrosComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
