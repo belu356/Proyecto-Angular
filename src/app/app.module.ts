@@ -9,7 +9,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PortadaComponent } from './portada/portada.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PostComponent } from './post/post.component';
-import { ContactoComponent } from './contacto/contacto.component'; 
+import { ContactoComponent } from './contacto/contacto.component';
+import { PersonajeComponent } from './personaje/personaje.component'; 
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     NosotrosComponent,
     PostComponent,
     ContactoComponent,
+    PersonajeComponent,
   ],
   imports: [
     BrowserModule,

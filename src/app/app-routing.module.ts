@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
+import {NosotrosComponent} from './nosotros/nosotros.component';
 import {ContactoComponent} from './contacto/contacto.component';
+import {PersonajeComponent} from './personaje/personaje.component';
 
 const routes: Routes = [
   {path:'nosotros', component: NosotrosComponent},
+  {path: 'personajedelmes', component: PersonajeComponent},
   {path: 'contacto', component: ContactoComponent},
   {path:'**', component : HomeComponent},
 ];
