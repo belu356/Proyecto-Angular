@@ -1,4 +1,4 @@
-.portada{
+/*.portada{
     background-color: #C0BBBB;
     height: 234px;
     width: 864px;
@@ -7,11 +7,29 @@
     border-color: red;
    
 }
+*/
 
 /*.col-xs-6{
     margin-right: 40px;
 }*/
 
-div{
-    margin-top: 10px;
+
+
+.sidebar-module {
+    padding: 1rem;
 }
+
+.sidebar-module-inset {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+  }
+  .sidebar-module-inset p:last-child,
+  .sidebar-module-inset ul:last-child,
+  .sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+  }
+  .blog-pagination {
+    margin-bottom: 4rem;
+  }
+

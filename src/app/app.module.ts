@@ -10,7 +10,8 @@ import { PortadaComponent } from './portada/portada.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PostComponent } from './post/post.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import { PersonajeComponent } from './personaje/personaje.component'; 
+import { PersonajeComponent } from './personaje/personaje.component';
+import { FooterComponent } from './footer/footer.component'; 
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { PersonajeComponent } from './personaje/personaje.component';
     PostComponent,
     ContactoComponent,
     PersonajeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
