@@ -11,7 +11,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PostComponent } from './post/post.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PersonajeComponent } from './personaje/personaje.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { PersonajePostComponent } from './personaje-post/personaje-post.component'; 
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactoComponent,
     PersonajeComponent,
     FooterComponent,
+    PersonajePostComponent,
   ],
   imports: [
     BrowserModule,
