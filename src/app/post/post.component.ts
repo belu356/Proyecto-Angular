@@ -7,11 +7,12 @@ import {post} from '../post.interface';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  styleUrls: ['./post.component.scss'],
+  providers: [PostService]
 })
 export class PostComponent implements OnInit {
   
-  post?: post;
+  post: any;
 
   constructor(private route: ActivatedRoute, 
     private service : PostService){ }
