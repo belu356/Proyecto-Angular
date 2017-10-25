@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {PostService} from "../post.service";
+import {CommentsService} from "../comments.service";
 
 @Component({
   selector: 'app-post',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
+  
+        comments:Array<any> =[];
+        posts:any;
 
-  constructor() { }
 
+    constructor(
+      private route:ActivatedRoute,
+      private p: PostService,
+      private c: CommentsService
+    ) { }
+  
+    
+      
+    }
   ngOnInit() {
   }
-
-}
+    
+   
+    
+  
