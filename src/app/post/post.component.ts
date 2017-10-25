@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+//import {CommentsService} from "../comments.service";
+import {ActivatedRoute} from '@angular/router';
 import {PostService} from "../post.service";
-import {CommentsService} from "../comments.service";
+import {post} from '../post.interface';
 
 @Component({
   selector: 'app-post',
@@ -9,22 +11,20 @@ import {CommentsService} from "../comments.service";
 })
 export class PostComponent implements OnInit {
   
-        comments:Array<any> =[];
-        posts:any;
+  post?: post;
 
-
-    constructor(
-      private route:ActivatedRoute,
-      private p: PostService,
-      private c: CommentsService
-    ) { }
-  
-    
-      
-    }
-  ngOnInit() {
+  constructor(private route: ActivatedRoute, 
+    private service : PostService){ }
+  private getPost(postId: number){
+    this.service.get(postId).subscribe(post=>{
+      this.post = post;
+    });
   }
-    
+  ngOnInit(){
+    this.route.params.subscribe((params) => {
+      let postId = params['postId'];
+      this.getPost(postId);
+    })
+  }
+}      
    
-    
-  

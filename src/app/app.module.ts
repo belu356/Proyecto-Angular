@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { PersonajeComponent } from './personaje/personaje.component';
 import { FooterComponent } from './footer/footer.component';
 import { PersonajePostComponent } from './personaje-post/personaje-post.component'; 
+import {PostService} from './post.service';
 
 
 @NgModule({
@@ -31,9 +33,12 @@ import { PersonajePostComponent } from './personaje-post/personaje-post.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     NgbModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    PostService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
